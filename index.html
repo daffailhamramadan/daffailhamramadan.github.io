@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Daffa Ilham Ramadan</title>
     <style>
+      .navbar{
+        position: fixed;
+        width: 100%;
+      }
+
       .navbar-nav{
         margin-left: auto;
         margin-right: 50px;
@@ -36,16 +41,25 @@
       }
 
       .Name{
-        margin-top: 100px;
+        margin-top: 200px;
         font-size: 70px;
       }
 
       .Intro{
         margin-top: 20px;
-        margin-bottom: 120px;
+        margin-bottom: 200px;
         font-size: 25px;
       }
 
+      .title{
+        margin-top: 20px;
+        font-size: 70px;
+      }
+
+      .content{
+        margin-bottom: 200px;
+        font-size: 20px;
+      }
 
     </style>
   </head>
@@ -58,7 +72,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">About Me</a>
+            <a class="nav-item nav-link" href="#About">About Me</a>
             <a class="nav-item nav-link" href="#">Portfolio</a>
             <a class="nav-item nav-link" href="#">Resume</a>
             <a class="nav-item nav-link" href="#">Contacts</a>
@@ -76,11 +90,14 @@
         </div> 
       </div>
     </section>
-    <section class="About Me">
+    <section id="About" class="About Me">
       <div class="container">
         <div class="d-flex justify-content-center text-light">
           <div class="title">About Me</div>
-      </div>
+        </div>
+        <div class="d-flex justify-content-center text-light p-5">
+          <p class="content">Hi! I'm Daffa Ilham Ramadan</p>
+        </div>
       </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
