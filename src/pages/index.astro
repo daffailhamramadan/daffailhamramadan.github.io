@@ -3,19 +3,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Daffa Ilham Ramadan</div>
-    <div class="text-3xl py-3 font-bold">Game Programmer</div>
+    <div class="text-5xl font-bold text-white">I'm Daffa Ilham Ramadan</div>
+    <div class="text-3xl py-3 font-bold">Game Developer</div>
     <div class="py-2">
       <text class="text-lg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus sit amet eros ac bibendum. Aenean arcu purus, ornare eget massa ut, lacinia volutpat lacus. Donec auctor massa a est feugiat hendrerit. Donec non scelerisque elit. Maecenas neque nibh, molestie a lacus vel, mattis eleifend ex.
+        Just an ordinary person with an extraordinary passion for <b>game development</b>, aspiring to become a <b>game programmer</b>. Besides game development, I have a keen interest in cybersecurity, anime, and the Japanese language.I enjoy learning something new whenever I can
       </text>
     </div>
     <div class="mt-8">
